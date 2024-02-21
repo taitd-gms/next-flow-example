@@ -9,7 +9,6 @@ import ReactFlow, {
   Node,
   NodeTypes,
   OnConnect,
-  OnConnectStart,
   OnEdgesChange,
   OnNodesChange,
   addEdge,
@@ -82,7 +81,6 @@ export default function OverviewFlow() {
       onNodesChange={onNodesChange}
       onEdgesChange={onEdgesChange}
       onConnect={onConnect}
-      onConnectStart={(params) => console.log("onConnectStart", params)}
       nodeTypes={nodeTypes}
     >
       <AddNodeButton />

@@ -5,10 +5,19 @@ import { useCallback } from "react";
 import { useReactFlow } from "reactflow";
 import { v4 as uuidv4 } from "uuid";
 
-let nodeId = 0;
-
 export default function AddNodeButton() {
   const reactFlowInstance = useReactFlow();
+
+  function generateRandomString() {
+    let result = "";
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const charactersLength = characters.length;
+    for (let i = 0; i < 5; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
 
   const handleAddNode = useCallback(() => {
     const id = uuidv4();
@@ -20,7 +29,7 @@ export default function AddNodeButton() {
       },
       type: "workNode",
       data: {
-        value: id,
+        value: generateRandomString(),
       },
     };
     reactFlowInstance.addNodes(newNode);

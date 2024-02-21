@@ -1,9 +1,9 @@
 import { Edge, MarkerType, Node } from "reactflow";
 
 export const nodes: Node[] = [
-  { id: "1", data: { label: "Node 1" }, position: { x: 500, y: 400 } },
-  { id: "2", data: { label: "Node 2" }, position: { x: 500, y: 600 } },
-  { id: "3", data: { label: "Node 3" }, position: { x: 800, y: 600 } },
+  { id: "1", data: { label: "Default node 1" }, position: { x: 500, y: 400 } },
+  { id: "2", data: { label: "Default node 2" }, position: { x: 500, y: 600 } },
+  { id: "3", data: { label: "Default node 3" }, position: { x: 800, y: 600 } },
   {
     id: "4",
     type: "workNode",

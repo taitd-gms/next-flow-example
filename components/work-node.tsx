@@ -1,11 +1,5 @@
-import { memo, useCallback, useState } from "react";
-import {
-  Handle,
-  Node,
-  NodeProps,
-  Position,
-  useUpdateNodeInternals,
-} from "reactflow";
+import { memo } from "react";
+import { Handle, Node, NodeProps, Position } from "reactflow";
 
 type NodeData = {
   value: number;
@@ -72,7 +66,7 @@ function WorkNode({ id, data, isConnectable }: NodeProps<NodeData>) {
         id="source-left"
       />
 
-      <span className="text-black text-sm">Node {data.value}</span>
+      <span className="text-black text-sm">Custom node {data.value}</span>
     </div>
   );
 }
