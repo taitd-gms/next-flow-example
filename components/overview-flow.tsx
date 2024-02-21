@@ -21,6 +21,7 @@ import { CSSProperties, useCallback, useState } from "react";
 import "reactflow/dist/style.css";
 import WorkNode from "@/components/work-node";
 import AddNodeButton from "@/components/add-node-button";
+import ThemeToggle from "@/components/theme-toggle";
 
 const nodeTypes: NodeTypes = {
   workNode: WorkNode,
@@ -84,6 +85,7 @@ export default function OverviewFlow() {
       nodeTypes={nodeTypes}
     >
       <AddNodeButton />
+      <ThemeToggle />
       <MiniMap style={minimapStyle} zoomable pannable />
       <Controls />
       <Background color="#aaa" gap={16} />
