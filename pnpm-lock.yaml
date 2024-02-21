@@ -47,6 +47,9 @@ dependencies:
   uuid:
     specifier: ^9.0.1
     version: 9.0.1
+  zustand:
+    specifier: ^4.5.1
+    version: 4.5.1(@types/react@18.2.57)(react@18.2.0)
 
 devDependencies:
   '@types/node':

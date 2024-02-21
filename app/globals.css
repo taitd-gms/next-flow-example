@@ -152,3 +152,7 @@ body,
   margin-top: 5px;
   font-size: 10px;
 }
+
+.react-flow__attribution {
+  display: none;
+}
