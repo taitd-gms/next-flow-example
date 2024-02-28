@@ -100,13 +100,16 @@ body,
   border-radius: 2px;
 }
 
-.react-flow__node-custom .react-flow__handle {
-  top: 24px;
-  right: -15px;
-  width: 6px;
-  height: 10px;
-  border-radius: 2px;
-  background-color: #778899;
+.react-flow .react-flow__handle {
+  width: 8px;
+  height: 8px;
+  border-radius: 3px;
+  background-color: #784be8;
+}
+
+.react-flow .react-flow__edge path,
+.react-flow__connectionline path {
+  stroke-width: 2;
 }
 
 .react-flow__node.circle {
